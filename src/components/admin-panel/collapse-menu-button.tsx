@@ -55,24 +55,24 @@ export function CollapseMenuButton({
     <Collapsible
       open={isCollapsed}
       onOpenChange={setIsCollapsed}
-      className="w-full"
+      className="w-full  "
     >
       <CollapsibleTrigger
-        className="[&[data-state=open]>div>div>svg]:rotate-180 mb-1"
+        className="[&[data-state=open]>div>div>svg]:rotate-180 hover:bg-[#fcd765] mb-1"
         asChild
       >
         <Button
           variant={active ? "secondary" : "ghost"}
-          className="w-full justify-start h-10"
+          className="w-full  justify-start h-10"
         >
-          <div className="w-full items-center flex justify-between">
-            <div className="flex items-center">
+          <div className="w-full  items-center flex justify-between">
+            <div className="flex  items-center">
               <span className="mr-4">
                 <Icon size={18} />
               </span>
               <p
                 className={cn(
-                  "max-w-[150px] truncate",
+                  "max-w-[150px] truncate ",
                   isOpen
                     ? "translate-x-0 opacity-100"
                     : "-translate-x-96 opacity-0"
@@ -83,7 +83,7 @@ export function CollapseMenuButton({
             </div>
             <div
               className={cn(
-                "whitespace-nowrap",
+                "whitespace-nowrap ",
                 isOpen
                   ? "translate-x-0 opacity-100"
                   : "-translate-x-96 opacity-0"
@@ -91,7 +91,7 @@ export function CollapseMenuButton({
             >
               <ChevronDown
                 size={18}
-                className="transition-transform duration-200"
+                className="transition-transform  duration-200"
               />
             </div>
           </div>
@@ -102,16 +102,16 @@ export function CollapseMenuButton({
           <Button
             key={index}
             variant={active ? "secondary" : "ghost"}
-            className="w-full justify-start h-10 mb-1"
+            className="w-full hover:bg-[#fcd765] justify-start h-10 mb-1"
             asChild
           >
             <Link href={href}>
-              <span className="mr-4 ml-2">
+              <span className="mr-4  ml-2">
                 <Dot size={18} />
               </span>
               <p
                 className={cn(
-                  "max-w-[170px] truncate",
+                  "max-w-[170px]  truncate",
                   isOpen
                     ? "translate-x-0 opacity-100"
                     : "-translate-x-96 opacity-0"
@@ -132,16 +132,16 @@ export function CollapseMenuButton({
             <DropdownMenuTrigger asChild>
               <Button
                 variant={active ? "secondary" : "ghost"}
-                className="w-full justify-start h-10 mb-1"
+                className="w-full  justify-start h-10 mb-1"
               >
-                <div className="w-full items-center flex justify-between">
+                <div className="w-full items-center  flex justify-between">
                   <div className="flex items-center">
-                    <span className={cn(isOpen === false ? "" : "mr-4")}>
+                    <span className={cn(isOpen === false ? "" : " mr-4")}>
                       <Icon size={18} />
                     </span>
                     <p
                       className={cn(
-                        "max-w-[200px] truncate",
+                        "max-w-[200px]  truncate",
                         isOpen === false ? "opacity-0" : "opacity-100"
                       )}
                     >
@@ -158,18 +158,18 @@ export function CollapseMenuButton({
         </Tooltip>
       </TooltipProvider>
       <DropdownMenuContent side="right" sideOffset={25} align="start">
-        <DropdownMenuLabel className="max-w-[190px] truncate">
+        <DropdownMenuLabel className="max-w-[190px]  truncate">
           {label}
         </DropdownMenuLabel>
         <DropdownMenuSeparator />
         {submenus.map(({ href, label }, index) => (
           <DropdownMenuItem key={index} asChild>
-            <Link className="cursor-pointer" href={href}>
-              <p className="max-w-[180px] truncate">{label}</p>
+            <Link className="cursor-pointer " href={href}>
+              <p className="max-w-[180px]  truncate">{label}</p>
             </Link>
           </DropdownMenuItem>
         ))}
-        <DropdownMenuArrow className="fill-border" />
+        <DropdownMenuArrow className="fill-border " />
       </DropdownMenuContent>
     </DropdownMenu>
   );
