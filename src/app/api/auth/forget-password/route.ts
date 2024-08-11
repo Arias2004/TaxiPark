@@ -6,7 +6,7 @@ import jwt from "jsonwebtoken";
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend('re_ehbhz1Ma_Mjo7bPf6uriHEyVLWHruB2Rw');
+const resend = new Resend('re_3WkhKZ72_HvuBfvNRLVUbuNBX9zXHX7dN');
 
 export async function POST(req: NextRequest) {
 

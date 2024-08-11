@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 
-const MONGODB_URI = 'mongodb+srv://stevdev04:CuCBTqsyHoFYfewG@stevdev.zvrherc.mongodb.net/mydb';
+const MONGODB_URI = 'mongodb+srv://Admin:12345678.@cluster0.ngj91ih.mongodb.net/PortalWeb';
 
 export const connectToDatabase = async () => {
     try {
