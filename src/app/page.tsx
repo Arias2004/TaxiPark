@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer/Index";
 import Link from "next/link";
 
 export default function HomePage() {
@@ -9,6 +10,7 @@ export default function HomePage() {
         <Link href="/auth/register">
           Registrarse
         </Link> 
+        <Footer />
     </main>
   );
 }

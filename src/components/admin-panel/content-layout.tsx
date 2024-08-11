@@ -7,7 +7,7 @@ interface ContentLayoutProps {
 
 export function ContentLayout({ title, children }: ContentLayoutProps) {
   return (
-    <div>
+    <div className="fixed">
       <Navbar/>
       <div className="container bg-[#161d26] pt-8 pb-8 px-4 sm:px-8">{children}</div>
     </div>

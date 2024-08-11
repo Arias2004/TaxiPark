@@ -1,7 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Link from "next/link";
 
-import PlaceholderContent from "@/components/demo/placeholder-content";
 import { ContentLayout } from "@/components/admin-panel/content-layout";
 import {
   Breadcrumb,
@@ -15,7 +14,6 @@ import {
 export default function AboutUsPage() {
   return (
     <>
-      <main className="w-full h-[200dvh] bg-[#161d26]">
         <div className="">
           <ContentLayout title="Dashboard">
             <Breadcrumb>
@@ -45,29 +43,49 @@ export default function AboutUsPage() {
               </BreadcrumbList>
             </Breadcrumb>
           </ContentLayout>
-        </div><section className="px-8">
-  <h1 className="text-white pb-10 text-[52px] leading-[60px]">
-    Conoce más sobre nosotros
-    <span className="text-[#fcd765]"> y nuestro compromiso con la calidad y el servicio.</span>
-  </h1>
-  <div className="flex items-center gap-40 justify-start">
-    <div className="w-[200px] gap-4 grid grid-cols-2">
-      {/* aquí van las imágenes */}
-      <img className="w-[82.75px] h-[108.99px]" src="https://i.pinimg.com/564x/33/36/5e/33365e5db531e8c8f0456eb1bc5b0ef1.jpg" alt="Imagen 1" />
-      <img className="w-[82.75px] h-[108.99px]" src="https://i.pinimg.com/564x/66/65/8c/66658c70494a46aabd008ef78e3f7ed0.jpg" alt="Imagen 2" />
-      <img className="w-[82.75px] h-[108.99px]" src="https://i.pinimg.com/564x/a4/54/77/a454776e499427ef11ca00e7cd967dfe.jpg" alt="Imagen 3" />
-      <img className="w-[82.75px] h-[108.99px]" src="https://www.aeropuertoquito.aero/wp-content/uploads/2023/03/preparate-transporte.jpg" alt="Transporte Aeropuerto" />
-    </div>
-    <div className="text-sm w-[500px] flex flex-col gap-6 text-white">
-      {/* aquí va el texto */}
-      <p>Somos TaxiPark, una empresa dedicada al servicio de transporte terrestre con amplia experiencia en el sector. Nos especializamos en ofrecer un servicio rápido, de calidad y con excelente atención a un precio asequible.</p>
-      <p>Iniciamos nuestras operaciones con la misión de proporcionar un transporte seguro y cómodo hacia y desde el Aeropuerto de Tababela en Quito, Ecuador. Nuestra alianza con <span className="text-[#fcd765]">TaxiPark</span> nos permite garantizar la máxima calidad en cada viaje.</p>
-      <p>Además de nuestro compromiso con la seguridad y el confort, ofrecemos tarifas atractivas y la posibilidad de realizar reservas de forma sencilla y rápida a través de nuestro portal web, WhatsApp, o correo electrónico.</p>
-      <p>Estamos aquí para resolver cualquier duda o inquietud que puedas tener, y te invitamos a conocer más sobre nosotros y nuestro servicio en esta sección.</p>
-    </div>
-  </div>
-</section>
+        </div>
+        <main className="w-full h-[260dvh] bg-[#161d26] -z-50">
+        <section className="px-8 absolute translate-x-[-50%] left-[60%] top-36">
+          <h1 className="text-white text-center pb-10 text-[52px] leading-[60px]">
+            Sobre nosotros
+          </h1>
+          <div className="flex gap-5 flex-col-reverse items-center">
+              {/* aquí van las imágenes */}
+              <img
+                className=""
+                src="https://i.ibb.co/6XGqC40/taxi-mejoradp.png"
+                alt="Imagen 1"
+              />
+            <div className="text-sm w-[800px] flex flex-col gap-6 text-white">
+              {/* aquí va el texto */}
+              <p className="text-center text-lg" >
+                Somos TaxiPark, una empresa dedicada al servicio de transporte
+                terrestre con amplia experiencia en el sector. Nos
+                especializamos en ofrecer un servicio rápido, de calidad y con
+                excelente atención a un precio asequible.
+              </p>
+            </div>
+          </div>
+          <div className="mt-32 flex flex-col items-center justify-center gap-8">
+            <ul className="flex items-center justify-center gap-10">
+              <li className="w-[506px] bg-[#12181f] border-[#283444] border shadow-[#12181f] shadow-lg rounded-xl h-[407px]">
+                <h1>carta</h1>
+              </li>
+              <li>
+                <img className="h-[407px] rounded-lg" src="https://i.pinimg.com/736x/47/b0/08/47b0081ec1713ea5285743cf098ac172.jpg" alt="" />
+              </li>
+            </ul>
 
+            <ul className="flex flex-row-reverse items-center justify-center gap-10">
+              <li className="w-[506px] bg-[#12181f] border-[#283444] border shadow-[#12181f] shadow-lg rounded-xl h-[407px]">
+                <h1>carta</h1>
+              </li>
+              <li>
+                <img className="h-[407px] rounded-lg" src="https://i.pinimg.com/736x/47/b0/08/47b0081ec1713ea5285743cf098ac172.jpg" alt="" />
+              </li>
+            </ul>
+          </div>
+        </section>
       </main>
     </>
   );
