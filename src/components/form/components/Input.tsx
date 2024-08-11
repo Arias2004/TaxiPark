@@ -1,5 +1,3 @@
-"use client";
-
 import { useContext } from "react";
 import { FormContext } from "..";
 
@@ -10,8 +8,16 @@ interface InputProps {
   placeholder?: string;
 }
 
-export function Input({ type, name, label, placeholder }: InputProps) {
-  const { formValues, setFormValues } = useContext(FormContext);
+export function Input({ type = "text", name, label, placeholder }: InputProps) {
+  // Asegúrate de que el contexto está definido
+  const context = useContext(FormContext);
+
+  if (!context) {
+    // Puedes manejar el caso en el que el contexto es undefined, tal vez lanzando un error
+    throw new Error("Input must be used within a Form component.");
+  }
+
+  const { formValues, setFormValues } = context;
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { value } = e.target;
@@ -20,13 +26,15 @@ export function Input({ type, name, label, placeholder }: InputProps) {
 
   return (
     <div className="input-container">
-      <input className="input w-[350px] text-white placeholder:text-xs  focus:placeholder:text-transparent"
-      type={type}
-      name={name}
-      id={name}
-      value={formValues[name] || ''}
-      onChange={handleChange}
-      placeholder={placeholder}/>
+      <input
+        className="input w-[350px] text-white placeholder:text-xs focus:placeholder:text-transparent"
+        type={type}
+        name={name}
+        id={name}
+        value={formValues[name] || ''}
+        onChange={handleChange}
+        placeholder={placeholder}
+      />
       <label className="label" htmlFor={name}>
         {label}
       </label>
