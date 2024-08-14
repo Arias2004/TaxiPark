@@ -81,7 +81,7 @@ export default function AboutUsPage() {
                 <h1>carta</h1>
               </li>
               <li>
-                <img className="h-[407px] rounded-lg" src="https://i.pinimg.com/736x/47/b0/08/47b0081ec1713ea5285743cf098ac172.jpg" alt="" />
+                <img className="h-[407px] rounded-lg" src="https://i.pinimg.com/564x/24/d7/bd/24d7bdffd3a388dc6c408229befca550.jpg" alt="" />
               </li>
             </ul>
           </div>

@@ -1,6 +1,4 @@
-/* eslint-disable react/no-unescaped-entities */
 import Link from "next/link";
-
 import { ContentLayout } from "@/components/admin-panel/content-layout";
 import {
   Breadcrumb,
@@ -15,48 +13,50 @@ import ButtonWhatsapp from "@/components/Whatsapp/Index";
 export default function ContactPage() {
   return (
     <>
-      <main className="w-full h-[200dvh] bg-[#161d26]">
-        <div className="">
-          <ContentLayout title="Dashboard">
-            <Breadcrumb>
-              <BreadcrumbList>
-                <BreadcrumbItem>
-                  <BreadcrumbLink asChild>
-                    <Link
-                      className="text-white hover:text-yellow-200 "
-                      href="/auth/login"
-                    >
-                      Iniciar Sesión
-                    </Link>
-                  </BreadcrumbLink>
-                </BreadcrumbItem>
-                <BreadcrumbSeparator />
-                <BreadcrumbItem>
-                  <BreadcrumbPage className="text-white hover:text-yellow-200 cursor-pointer">
-                    Home
-                  </BreadcrumbPage>
-                </BreadcrumbItem>
-                <BreadcrumbSeparator />
-                <BreadcrumbItem>
-                  <BreadcrumbPage className="text-white">
-                    Contact
-                  </BreadcrumbPage>
-                </BreadcrumbItem>
-              </BreadcrumbList>
-            </Breadcrumb>
-          </ContentLayout>
-        </div>
+      <div className="">
+        <ContentLayout title="Dashboard">
+          <Breadcrumb>
+            <BreadcrumbList>
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link
+                    className="text-white hover:text-yellow-200 "
+                    href="/auth/login"
+                  >
+                    Iniciar Sesión
+                  </Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbPage className="text-white hover:text-yellow-200 cursor-pointer">
+                  Home
+                </BreadcrumbPage>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbPage className="text-white">
+                  Contact
+                </BreadcrumbPage>
+              </BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
+        </ContentLayout>
+      </div>
+
+      {/* Main content */}
+      <main className="w-full pt-[100px] h-[200dvh] bg-[#161d26]">
         <section className="px-8">
           <h1 className="text-white text-[52px] leading-[60px]">
-            Solicita aqui el servicio de
+            Solicita aquí el servicio de
             <span className="text-[#fcd765]"> TaxiPark </span>
           </h1>
           <div className="mt-8 text-white">
             <p className="text-[18px] leading-[26px]">
               Bienvenido al portal web del servicio de transporte al Aeropuerto
               de Tababela en Quito, Ecuador. Nuestro portal corporativo colabora
-              estrechamente con <span className="text-[#fcd765]">TaxiPark</span>
-              , asegurando que recibas el mejor servicio posible.
+              estrechamente con <span className="text-[#fcd765]">TaxiPark</span>,
+              asegurando que recibas el mejor servicio posible.
             </p>
             <p className="mt-4 text-[18px] leading-[26px]">
               Si deseas adquirir el servicio de taxi, puedes contactarnos a
