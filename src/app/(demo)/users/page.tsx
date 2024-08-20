@@ -59,7 +59,7 @@ export default function UsersPage() {
         </section>
 
         {/* Sección de íconos */}
-        <section className="icon-container mt-12">
+        <section className={`${styles.iconContainer} mt-12 `}>
           <div className="icon-box">
             <i className="fa-solid fa-user"></i>
           </div>
