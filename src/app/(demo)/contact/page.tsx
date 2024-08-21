@@ -1,49 +1,9 @@
-import Link from "next/link";
-import { ContentLayout } from "@/components/admin-panel/content-layout";
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
 import ButtonWhatsapp from "@/components/Whatsapp/Index";
 
 export default function ContactPage() {
   return (
     <>
-      <div>
-        <ContentLayout title="Dashboard">
-          <Breadcrumb>
-            <BreadcrumbList>
-              <BreadcrumbItem>
-                <BreadcrumbLink asChild>
-                  <Link
-                    className="text-white hover:text-yellow-200"
-                    href="/auth/login"
-                  >
-                    Iniciar Sesión
-                  </Link>
-                </BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbPage className="text-white hover:text-yellow-200 cursor-pointer">
-                  Home
-                </BreadcrumbPage>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbPage className="text-white">Contact</BreadcrumbPage>
-              </BreadcrumbItem>
-            </BreadcrumbList>
-          </Breadcrumb>
-        </ContentLayout>
-      </div>
-
-      {/* Main content */}
-      <main className="w-full pt-[100px] h-[200dvh] bg-[#161d26] flex justify-center items-start">
+      <main className="w-full pt-[100px]  bg-[#161d26] flex justify-center items-start">
         <section className="w-full max-w-4xl p-8">
           <h1 className="text-white text-[52px] leading-[60px] text-center">
             Solicita aquí el servicio de
@@ -56,21 +16,21 @@ export default function ContactPage() {
                 <input
                   type="text"
                   placeholder="Name"
-                  className="block w-full mb-4 p-2 border border-gray-400 bg-[#2c3a47] text-white"
+                  className="block w-full mb-4 p-2 focus:outline-none  bg-transparent border-b border-[#e2b56a] text-white"
                 />
                 <input
                   type="text"
                   placeholder="Email"
-                  className="block w-full mb-4 p-2 border border-gray-400 bg-[#2c3a47] text-white"
+                  className="block w-full mb-4 p-2 focus:outline-none  bg-transparent border-b border-[#e2b56a] text-white"
                 />
                 <input
                   type="text"
                   placeholder="Phone"
-                  className="block w-full mb-4 p-2 border border-gray-400 bg-[#2c3a47] text-white"
+                  className="block w-full mb-4 p-2 focus:outline-none  bg-transparent border-b border-[#e2b56a] text-white"
                 />
                 <textarea
                   placeholder="Message"
-                  className="block w-full mb-4 p-2 border border-gray-400 bg-[#2c3a47] text-white"
+                  className="block w-full mb-4 p-2 focus:outline-none  bg-transparent border-b border-[#e2b56a] text-white"
                 />
                 <input
                   className="form-submit bg-[#fcd765] text-black py-2 px-4 cursor-pointer mt-4"
@@ -87,7 +47,7 @@ export default function ContactPage() {
                 <br />
                 <span className="text-[#fcd765]">Email:</span>{" "}
                 <a href="mailto:cutncurl@bigpond.net.au">
-                  cutncurl@bigpond.net.au
+                  taxiaeropuertotababela@gmail.com
                 </a>
               </p>
               <p className="mt-4">
@@ -109,7 +69,6 @@ export default function ContactPage() {
             </div>
           </div>
         </section>
-        <ButtonWhatsapp />
       </main>
     </>
   );

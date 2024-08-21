@@ -63,3 +63,9 @@ Direct demo link: `https://shadcn-ui-sidebar.salimi.my`
 #### Sheet menu
 
 <img src="/screenshots/screenshot-4.png" width="300">
+
+
+//1. arreglar el home
+//2. Mejorar diseño de contacto
+//3. Animacion 3d y acabvar diseño de About us
+//4. Arreglar barra de navegación

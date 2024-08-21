@@ -17,13 +17,7 @@ export default function Footer() {
             <a href="#mision">Misión</a>
           </li>
           <li className="cursor-pointer text-sm ">
-            <a href="#marcas">Nuestras marcas</a>
-          </li>
-          <li className="cursor-pointer text-sm ">
             <a href="#vision">Visión</a>
-          </li>
-          <li className="cursor-pointer text-sm ">
-            <a href="#noticias">Noticias</a>
           </li>
         </ul>
         <div className="text-[11px] w-[1200px] absolute translate-y-[-50%] translate-x-[-50%] left-[50%] top-[80%] mt-10 gap-10 grid place-content-center">

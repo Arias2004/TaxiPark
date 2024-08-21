@@ -1,51 +1,113 @@
+import Link from "next/link";
+
 export default function FooterDemo() {
-    return (
-      <>
-        <footer className="h-[50vh] bg-[#161d26] text-white relative">
-  
-          <ul className="absolute translate-y-[-50%] translate-x-[-50%] left-[50%] top-[50%] w-[1200px] px-28 gap-x-8 items-center justify-between flex">
-            <li className="cursor-pointe text-xs ">
-              <a href="#intro">Inicio</a>
-            </li>
-            <li className="cursor-pointer text-xs ">
-              <a href="#nosotros">Sobre Nosotros</a>
-            </li>
-            <li className="cursor-pointer text-xs ">
-              <a href="#contacto">Contacto</a>
-            </li>
-            <li className="cursor-pointer text-xs ">
-              <a href="#mision">Misión</a>
-            </li>
-            <li className="cursor-pointer text-xs ">
-              <a href="#marcas">Nuestras marcas</a>
-            </li>
-            <li className="cursor-pointer text-xs ">
-              <a href="#vision">Visión</a>
-            </li>
-            <li className="cursor-pointer text-xs ">
-              <a href="#noticias">Noticias</a>
-            </li>
-          </ul>
-          <div className="text-[10px] w-[1200px] absolute translate-y-[-50%] translate-x-[-50%] left-[50%] top-[55%] mt-10 gap-10 grid place-content-center">
-            <ul className="flex place-content-center gap-x-4">
-              <li className="cursor-pointer">TIKTOK</li>
-              <li className="cursor-pointer">INSTAGRAM</li>
-              <li className="cursor-pointer">FACEBOOK</li>
-              <li className="cursor-pointer">X</li>
-              <li className="cursor-pointer">PINTEREST</li>
-              <li className="cursor-pointer">YOUTUBE</li>
-              <li className="cursor-pointer">SPOTIFY</li>
-            </ul>
-          </div>
-          <div className="text-[9px] w-[1200px] absolute translate-y-[-50%] translate-x-[-50%] left-[50%] bottom-5">
-            <ul className="flex items-center justify-center gap-x-4">
-              <li className="cursor-pointer">CONFIGURACIÓN DE COOKIES</li>
-              <li className="cursor-pointer">POdivTICA DE PRIVACIDAD Y COOKIES</li>
-              <li className="cursor-pointer">CONDICIONES DE COMPRA</li>
-            </ul>
-          </div>
-        </footer>
-      </>
-    );
-  }
-  
+  return (
+    <>
+      <footer className="h-[230px] grid place-content-center bg-[#161d26] pb-10 text-white relative">
+        <ul className="flex items-center justify-center gap-10">
+          <li className="w-[250px] grid items-center justify-center gap-2 h-[150px]">
+            <img
+              className="w-48"
+              src="https://i.ibb.co/vXBZQBw/logo-inner-esteban.png"
+              alt="logo"
+            />
+            <div className="flex items-center justify-center gap-8">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1.5em"
+                height="1.5em"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  fill="#1877F2"
+                  d="M256 128C256 57.308 198.692 0 128 0S0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"
+                />
+                <path
+                  fill="#FFF"
+                  d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A129 129 0 0 0 128 256a129 129 0 0 0 20-1.555V165z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1.5em"
+                height="1.5em"
+                viewBox="0 0 1024 1024"
+              >
+                <path
+                  fill="currentColor"
+                  fillRule="evenodd"
+                  d="M912 224.962C912 162.575 861.425 112 799.038 112H224.962C162.575 112 112 162.575 112 224.962v574.076C112 861.426 162.575 912 224.962 912h574.076C861.425 912 912 861.426 912 799.038zM774.759 460.916c-51.615.577-99.71-15.027-141.938-43.927v202.874c0 90.166-61.72 167.62-148.996 187.848c-119.068 27.165-219.864-58.954-232.577-161.835c-13.294-102.884 52.322-193.051 152.892-213.281c19.651-4.045 49.209-4.045 64.458-.577v108.661c-4.692-1.153-9.086-2.31-13.709-2.888c-39.304-6.937-77.371 12.715-92.977 48.55c-15.605 35.838-5.16 77.451 26.629 101.73c26.586 20.806 56.085 23.694 86.14 9.822c30.057-13.291 46.21-37.567 49.676-70.512c.578-4.622.546-9.826.546-15.028V222.206c0-10.981.086-10.502 11.068-10.502h86.12c6.36 0 8.673.915 9.25 8.433c4.621 67.047 55.526 124.147 120.838 132.818c6.937 1.155 14.369 1.613 22.58 2.19z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1.5em"
+                height="1.5em"
+                viewBox="0 0 256 258"
+              >
+                <defs>
+                  <linearGradient
+                    id="IconifyId19172c0a5202fc84f6"
+                    x1="50%"
+                    x2="50%"
+                    y1="100%"
+                    y2="0%"
+                  >
+                    <stop offset="0%" stopColor="#1FAF38" />
+                    <stop offset="100%" stopColor="#60D669" />
+                  </linearGradient>
+                  <linearGradient
+                    id="IconifyId19172c0a5202fc84f7"
+                    x1="50%"
+                    x2="50%"
+                    y1="100%"
+                    y2="0%"
+                  >
+                    <stop offset="0%" stopColor="#F9F9F9" />
+                    <stop offset="100%" stopColor="#FFF" />
+                  </linearGradient>
+                </defs>
+                <path
+                  fill="url(#IconifyId19172c0a5202fc84f6)"
+                  d="M5.463 127.456c-.006 21.677 5.658 42.843 16.428 61.499L4.433 252.697l65.232-17.104a123 123 0 0 0 58.8 14.97h.054c67.815 0 123.018-55.183 123.047-123.01c.013-32.867-12.775-63.773-36.009-87.025c-23.23-23.25-54.125-36.061-87.043-36.076c-67.823 0-123.022 55.18-123.05 123.004"
+                />
+                <path
+                  fill="url(#IconifyId19172c0a5202fc84f7)"
+                  d="M1.07 127.416c-.007 22.457 5.86 44.38 17.014 63.704L0 257.147l67.571-17.717c18.618 10.151 39.58 15.503 60.91 15.511h.055c70.248 0 127.434-57.168 127.464-127.423c.012-34.048-13.236-66.065-37.3-90.15C194.633 13.286 162.633.014 128.536 0C58.276 0 1.099 57.16 1.071 127.416m40.24 60.376l-2.523-4.005c-10.606-16.864-16.204-36.352-16.196-56.363C22.614 69.029 70.138 21.52 128.576 21.52c28.3.012 54.896 11.044 74.9 31.06c20.003 20.018 31.01 46.628 31.003 74.93c-.026 58.395-47.551 105.91-105.943 105.91h-.042c-19.013-.01-37.66-5.116-53.922-14.765l-3.87-2.295l-40.098 10.513z"
+                />
+                <path
+                  fill="#FFF"
+                  d="M96.678 74.148c-2.386-5.303-4.897-5.41-7.166-5.503c-1.858-.08-3.982-.074-6.104-.074c-2.124 0-5.575.799-8.492 3.984c-2.92 3.188-11.148 10.892-11.148 26.561s11.413 30.813 13.004 32.94c1.593 2.123 22.033 35.307 54.405 48.073c26.904 10.609 32.379 8.499 38.218 7.967c5.84-.53 18.844-7.702 21.497-15.139c2.655-7.436 2.655-13.81 1.859-15.142c-.796-1.327-2.92-2.124-6.105-3.716s-18.844-9.298-21.763-10.361c-2.92-1.062-5.043-1.592-7.167 1.597c-2.124 3.184-8.223 10.356-10.082 12.48c-1.857 2.129-3.716 2.394-6.9.801c-3.187-1.598-13.444-4.957-25.613-15.806c-9.468-8.442-15.86-18.867-17.718-22.056c-1.858-3.184-.199-4.91 1.398-6.497c1.431-1.427 3.186-3.719 4.78-5.578c1.588-1.86 2.118-3.187 3.18-5.311c1.063-2.126.531-3.986-.264-5.579c-.798-1.593-6.987-17.343-9.819-23.64"
+                />
+              </svg>
+            </div>
+          </li>
+          <li className="w-[250px] grid gap-2 h-[150px] bg-[#1212126e] rounded-xl text-white text-sm p-5">
+            <Link className="hover:text-blue-900" href="/home">
+              <p>Home</p>
+            </Link>
+            <Link className="hover:text-blue-900" href="/post">
+              <p>Post</p>
+            </Link>
+            <Link className="hover:text-blue-900" href="/about-us">
+              <p>About us</p>
+            </Link>
+            <Link className="hover:text-blue-900" href="/contact">
+              <p>Contact</p>
+            </Link>
+          </li>
+          <li className="w-[250px] gap-1 grid h-[150px] bg-[#1212126e] rounded-xl text-white text-sm p-5">
+            <div className="grid">
+              <h5>Email:</h5>
+              <p>taxiaeropuertotababela@gmail.com</p>
+            </div>
+            <div className="grid">
+              <h5>Telefono:</h5>
+              <p>+593983838735</p>
+            </div>
+          </li>
+        </ul>
+      </footer>
+    </>
+  );
+}

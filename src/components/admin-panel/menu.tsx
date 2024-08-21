@@ -107,10 +107,9 @@ export function Menu({ isOpen }: MenuProps) {
             <TooltipProvider disableHoverableContent>
               <Tooltip delayDuration={100}>
                 <TooltipTrigger asChild>
-                  <Button
+                  <Link href="/auth/logout"
                     onClick={() => {}}
-                    variant="outline"
-                    className="w-full hover:bg-[#fcd765] transition-all ease-in duration-200 bg-transparent hover:text-black border-[#fcd765] justify-center h-10 mt-5"
+                    className="w-full h-10 place-content-center py-3 flex rounded-lg gap-4 outline-[#fcd765] hover:bg-[#fcd765] outline-1 outline  transition-all ease-in duration-200 bg-transparent hover:text-black border-[#fcd765] justify-center "
                   >
                     <span className={cn(isOpen === false ? "" : "mr-4")}>
                       <LogOut size={18} />
@@ -123,7 +122,7 @@ export function Menu({ isOpen }: MenuProps) {
                     >
                       Sign out
                     </p>
-                  </Button>
+                  </Link>
                 </TooltipTrigger>
                 {isOpen === false && (
                   <TooltipContent side="right">Sign out</TooltipContent>

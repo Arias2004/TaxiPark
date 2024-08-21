@@ -11,7 +11,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={raleway.className}>
+      <body className={`${raleway.className} bg-[#161d26]`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <NotificacionProvider>
             <main className="w-full h-full"  >
