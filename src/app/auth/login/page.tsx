@@ -63,7 +63,7 @@ export default function Login() {
 
                         <div className="flex flex-col items-center gap-2">
                             <Form.Footer description="Has olvidado su contraseña?" textLink="Recuperar" link="/auth/forget-password" />
-                            <Form.Footer description="Aun no tienes cuenta?" textLink="Register" link="/auth/register" />
+                            <Form.Footer description="Aun no tienes cuenta?" textLink="Registrarse" link="/auth/register" />
                         </div>
 
                     </Form>

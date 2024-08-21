@@ -23,7 +23,7 @@ export default function Register() {
     return ( 
         <>
             <main className="flex relative flex-row-reverse bg-[#12181f] w-full h-dvh items-center justify-center">
-                <IconHomeForm params="/register" />
+                <IconHomeForm params="/Registrarse" />
                 <div className="bg-[#fcd765] w-full h-dvh grid place-content-center">
                     <h1 className="text-white text-4xl font-bold">
                         Register
